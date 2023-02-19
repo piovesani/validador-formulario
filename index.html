@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validador de form</title>
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="leftside">
+            <img src="assets/img/login.png" alt="login" />
+        </div>
+        <div class="rightside">
+            <form method="POST" class="validator">
+                <h1>Cadastrar</h1>
+                <label>
+                    Nome<br />
+                    <input type="text" name="name" data-rules="required|min=2"/>
+                </label>
+
+                <label>
+                    Email<br />
+                    <input type="text" name="email" data-rules="required|email"/>
+                </label>
+
+                <label>
+                    Crie uma senha<br />
+                    <input type="text" name="password" data-rules="required|min=8|key"/>
+                </label>
+
+                <label>
+                    <input class="btn" type="submit" value="Cadastrar"/>
+                </label>
+            </form>
+            <div>
+                Já tem uma conta? <a><strong>Faça o login</strong></a>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
